@@ -1,0 +1,469 @@
+/* mobile */
+@media (max-width: 740px){
+    /* base */
+    .view-btn{
+        margin: 20px 15%;
+    }
+
+    .scroll-up .view-btn{
+        margin: 20px 20%;
+    }
+    /* main */
+    .header__menu-sidebar{
+        width: 320px;
+    }
+    
+    .header__bar{
+        display: block;
+    }
+
+    .header__logo{
+        margin: auto;
+    }
+    
+    .header__infor-title {
+        margin: 10px 0;
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .header__menu-sidebar-icon {
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header__infor{
+        top: 60%;
+    }
+
+    .zero-title.underline::after {
+        bottom: 4px;
+    }
+
+    .header__infor-des{
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+
+    .header__search{
+        width: 310px;
+        border-radius: 25px;
+    }
+
+    .header__subnav {
+        display: block;
+        margin: 30px 0;
+    }
+
+    .header__subnav-img {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .body__introduce {
+        margin-left: 8.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        width: 100%;
+    }
+
+    .body__introduce-box{
+        width: 100%;
+    }
+
+    .app_content-main-nav {
+        display: block;
+    }
+
+    .main-section{
+        font-size: 30px;
+        transform: translateX(25%);
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    .four-title.underline::after{
+        bottom: 8px;
+    }
+
+    .main-section-btn{
+        width: 200px;
+        font-size: 12px;
+        height: 32px;
+        margin: 0 25%;
+    }
+
+    .place-des_title-main{
+        font-size: 35px;
+    }
+
+    .app_content-introduce{
+        display: block;
+    }
+
+    .place-des-price-sub,
+    .place-des-price-main{
+        font-size: 36px;
+    }
+
+    .place-des-price-main span {
+        font-size: 16px;
+    }
+
+    .place-des-btn{
+        width: 135px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .place-beach-img{
+        height: 300px;
+    }
+
+    .place-beach-img-time{
+        bottom: -9%;
+    }
+
+    .place-beach-img-time__day,
+    .place-beach-img-time__hour,
+    .place-beach-img-time__minute,
+    .place-beach-img-time__second{
+        padding: 5px 10px;
+    }
+
+    .place-beach-img-time__day h1,
+    .place-beach-img-time__hour h1,
+    .place-beach-img-time__minute h1,
+    .place-beach-img-time__second h1{
+        font-size: 24px;
+    }
+
+    .place-beach-img-time__day p,
+    .place-beach-img-time__hour p,
+    .place-beach-img-time__minute p,
+    .place-beach-img-time__second p{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+    .prevent::after{
+        font-size: 25px;
+        top: 27%;
+        left: 94%;
+    }
+
+    .container-infor{
+        margin-left: 8.33333%;
+        padding: 0;
+    }
+
+    .tour-des h1{
+        font-size: 30px;
+    }
+    
+    .tour-des p{
+        font-size: 14px;
+    }
+
+    .area-choice{
+        display: block;
+    }
+    
+    .area-choice-infor{
+        padding-top: 65px;
+    }
+
+    .area-choice-infor,
+    .area-choice-title__sub{
+        margin: 0;
+    }
+    
+    .area-choice-title{
+        font-size: 32px;
+    }
+
+    .package-choice__detail-nav{
+        margin: 15px 0;
+    }
+
+    .package-btn{
+        margin: 20px 25%;
+    }
+
+    .footer-des{
+        text-align: center;
+    }
+    
+    .footer-nav{
+        display: block;
+    }
+
+    .footer-nav__input {
+        margin: 30px 20px;
+    }
+    
+    .footer-nav__btn{
+        width: 218px;
+        margin: 0 20px;
+        padding: 10px 8px;
+        border-radius: 40px;
+    }
+    
+    .footer-logo{
+        margin: 0 15%;
+    }
+    
+    .footer-contact-link{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-list__item-header h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer_source{
+        text-align: center;
+    }
+
+    .footer_source p{
+        margin: 5px 30px;
+        font-size: 12px;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .scroll-up .view-btn{
+        margin: 20px 33%;
+    }
+
+    .header__menu-sidebar .view-btn{
+        margin: 20px 20%;
+    }
+    /* main */
+    .header__bar{
+        display: block;
+    }
+
+    .header__logo{
+        margin: auto;
+    }
+
+    .header__menu-sidebar-icon {
+        margin: 0 50%;
+        padding: 0 ;
+        font-size: 30px;
+    }
+
+    .zero-title.underline::after {
+        background-color: var(--violet-color);
+        bottom: 8px;
+    }
+
+    .body__introduce-box{
+        width: 100%;
+    }
+
+    .app_content-main-nav {
+        display: block;
+    }
+
+    .main-section{
+        font-size: 30px;
+        transform: translateX(35%);
+        margin: 0;
+        padding: 30px 0;
+        font-size: 36px;
+    }
+
+    .main-section-btn{
+        width: 200px;
+        font-size: 12px;
+        height: 32px;
+        margin: 0 37%;
+    }
+
+    .app_content-introduce{
+        display: block;
+    }
+
+    .place-des_title{
+        text-align: center;
+    }
+
+    .place-des-btn{
+        margin: 20px 0;
+    }
+
+    .place-beach{
+        margin-top: 30px;
+    }
+
+    .area-choice{
+        display: block;
+    }
+    
+    .area-choice-infor{
+        padding-top: 65px;
+    }
+
+    .area-choice-infor,
+    .area-choice-title__sub{
+        margin: 0;
+    }
+    
+    .area-choice-title{
+        font-size: 32px;
+    }
+
+    .package-choice__detail-nav{
+        margin: 15px 0;
+    }
+
+    
+    .sixth-title.underline::after{
+        bottom: 9px;
+    }
+    
+    .package-choice__detail-nav-icon{
+        top: 91%;
+        left: 85%;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .package-choice__detail-nav-icon img {
+        height: 40px;
+        width: 40px;
+        top: 14px;
+        left: 14px;
+    }
+    
+    .package-btn{
+        width: 150px;
+        margin: 20px 35%;
+        padding: 16px 12px;
+        border-radius: 40px;
+    }
+    .footer-introduce{
+        display: block;
+        padding: 40px 0;
+    }
+
+    .footer-nav{
+        margin: 20px 0;
+    }
+
+    .footer-nav__input{
+        margin-left: 0;
+        flex: 1;
+    }
+
+    .footer-nav__btn{
+        padding: 11px 0;
+        border-radius: 40px;
+        width: 120px;
+    }
+
+    .footer_source{
+        justify-content: center;
+    }
+
+}
+/* medium pc */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .header__choice{
+        display: none;
+    }
+
+    .header__bar{
+        display: block;
+    }
+    
+    .header__logo{
+        margin: auto;
+    }
+
+    .header__menu-sidebar-icon {
+        margin: 0 50%;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .col.l-2-4{
+        display: none;
+    }
+
+    .wide .l-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .select-place-infor{
+        justify-content: space-evenly;
+    }
+
+    .wide .l-o-3{
+        margin-left: 8%;
+    }
+
+    .place-beach-img-time__day,
+    .place-beach-img-time__hour,
+    .place-beach-img-time__minute,
+    .place-beach-img-time__second{
+        padding: 8px 12px;
+    }
+
+    .place-beach-img-time__day h1,
+    .place-beach-img-time__hour h1,
+    .place-beach-img-time__minute h1,
+    .place-beach-img-time__second h1{
+        font-size: 24px;
+    }
+
+    .prevent::after {
+        content: "/";
+        position: absolute;
+        font-size: 30px;
+        top: 27%;
+        left: 95%;
+    }
+
+    .container-infor{
+        padding: 0;
+    }
+
+    .l-2{
+        display: none;
+    }
+
+    .wide .l-3-3{
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .package-choice__detail-nav-icon{
+        top: 91%;
+        left: 85%;
+    }
+
+    .footer-more-infor{
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        margin-left: 8.33333%;
+    }
+
+    .footer-container.l-8{
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+}
+
+
+
+

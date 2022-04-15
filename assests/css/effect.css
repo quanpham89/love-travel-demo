@@ -1,0 +1,405 @@
+/* color class */
+.berlin{
+    background: var(--berlin-color);
+}
+
+.hongkong{
+    background: var(--hongkong-color);
+}
+
+.san-fracisco{
+    background: var(--san-color);
+}
+
+.tuscany{
+    background: var(--tuscany-color);
+}
+
+.amsterdam{
+    background: var(--ams-color);
+}
+
+.phuket{
+    background: var(--phuket-color);
+}
+/* header belong to header bar */
+.header__choice-list-expend-link:hover,
+.more-options-list:hover{
+    background-color: #f9f9f9;
+}
+.header__choice-list:hover .header__choice-list-expend{
+    display: block;
+}
+
+.header__choice-list-expend-link:hover .more-options{
+    display: block;
+}
+.header__sidebar-check:checked ~.header__menu-sidebar{
+    transform: translateX(0);
+}
+
+
+/* header__subnav */
+.header__subnav-img:hover{
+    transform: scale(1.1);
+    background-color: rgba(0,0,0,0.2);
+}
+/* scale */
+.scale-up{
+    will-change: scale;
+    transition: 0.25s;
+}
+
+.scale-up:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+/* scroll up-down */
+.scroll-down{
+    position: absolute;
+    height: 51%;
+    top: 0;
+    left: 0;
+    right: -10px;
+    background: linear-gradient(to bottom, #ffd205 0%, #ff9b05 100%);
+    z-index: 30;
+    transform: translateY(-200px);
+    transition: 0.4s;
+}
+
+.scroll-up{
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: -10px;
+    background: linear-gradient(to top, #ffd205 0%, #ff9b05 100%);
+    z-index: 30;
+    transform: translateY(200px);
+    transition: 0.4s;
+}
+
+.body__introduce:hover .scroll-up{
+    transform: translateY(0);
+}
+
+.body__introduce:hover .scroll-down{
+    transform: translateY(0);
+}
+/* scroll form left-right */
+.scroll-from-left{
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: var(--san-color);
+    transform: translateX(-100%);
+    transition: 0.45s;
+}
+
+.scroll-from-right{
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to left, #ba71da 0%, #da717b 100%);
+    transform: translateX(100%);
+    transition: 0.45s;
+}
+
+.body__introduce:hover .scroll-from-left{
+    transform: translateX(-50%);
+}
+
+.body__introduce:hover .scroll-from-right{
+    transform: translateX(49%);
+}
+
+
+.scroll-from-side-infor{
+    position: absolute;
+    z-index: 40;
+    background: transparent ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+    animation: appear linear 0.5s;
+}
+
+.body__introduce:hover .scroll-from-side-infor{
+    display: block;
+}
+
+/*  cricle scale */
+.circle-scale{
+    position: absolute;
+    z-index: 30;
+    background: linear-gradient(to right,  #f3c96b 38%, #f3a46b 62%);
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    overflow: hidden;
+    transition: 0.45s;
+    will-change: transition,tranform;
+}
+
+.circle-scale-infor{
+    position: absolute;
+    z-index: 40;
+    background: transparent ;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.body__introduce:hover .circle-scale{
+    width: 150%;
+    height: 150%;
+    transform: scale(1);
+    top: -25%;
+    bottom: 0;
+    left: -25%;
+    right: 0;
+}
+
+/*scroll-circle  */
+.scroll-circle{
+    position: absolute;
+    z-index: 30;
+    background: linear-gradient(to right, #14b9d5 38%, #14d5b1 68%);
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.45s;
+}
+
+.scroll-circle-infor{
+    position: absolute;
+    z-index: 40;
+    background: transparent ;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.body__introduce:hover .scroll-circle{
+    width: 150%;
+    height: 150%;
+    transform: rotate(0deg);
+    top: -25%;
+    bottom: 0;
+    left: -25%;
+    right: 0;
+}
+
+/* scroll from top-down */
+.scroll-from-top-left{
+    position: absolute;
+    background-color: #000;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--hongkong-color) ;
+    transform: translate(-100%,-100%);
+    transform-origin: top left;
+    transition: 0.45s;
+}
+
+.body__introduce:hover .scroll-from-top-left{
+    transform: translate(0,0);
+}
+
+.scroll-from-bottom-right{
+    position: absolute;
+    background-color: #000;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #f76570 0%, #f78d65 100%);
+    transform: translate(100%,100%);
+    transform-origin: top left;
+    transition: 0.45s;
+}
+
+.body__introduce:hover .scroll-from-bottom-right{
+    transform: translate(0,0);
+}
+
+
+/* scroll from center to left-right*/
+.scroll-from-center-to-left{
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--tuscany-color);
+    transition: 0.5s;
+}
+.scroll-from-center-to-right{
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #1bbc9b 0%, #1bbc63 100%);
+    transition: 0.5s;
+}
+
+.body__introduce:hover .scroll-from-center-to-left{
+    right: 0;
+}
+
+
+.body__introduce:hover .scroll-from-center-to-right{
+    left: 0;
+    background: linear-gradient(to left, #1bbc9b 0%, #1bbc63 50%, transparent 100%);
+}
+
+/* earth img animation */
+.body__destiantion-img-earth img{
+    animation: spin-around linear 20s;
+    animation-iteration-count: infinite;
+}
+/* slider change */
+.place-beach-img{
+    position: relative;
+    z-index: -1;
+    height: 400px;
+    animation: slider linear 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* time change color */
+.place-beach-img-time{
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: -15%;
+    background: var(--hongkong-color);
+    transform: translateX(-50%);
+    display: flex;
+    animation: color-changing linear 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes spin-around{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes slider{
+    0%{
+        background: url('../img/body-img/destination-8.jpg') center/cover no-repeat;
+    }
+    10%{
+        background: url('../img/body-img/destination-8.jpg') center/cover no-repeat;
+    }
+    25%{
+        background: url('../img/body-img/destination-17.jpg') center/cover no-repeat;
+    }
+    35%{
+        background: url('../img/body-img/destination-17.jpg') center/cover no-repeat;
+    }
+    45%{
+        background: url('../img/body-img/destination-18.jpg') center/cover no-repeat;
+    }
+    55%{
+        background: url('../img/body-img/destination-18.jpg') center/cover no-repeat;
+    }
+    65%{
+        background: url('../img/body-img/destination-19.jpg') center/cover no-repeat;
+    }
+    75%{
+        background: url('../img/body-img/destination-19.jpg') center/cover no-repeat;
+    }
+    85%{
+        background: url('../img/body-img/destination-20.jpg') center/cover no-repeat;
+    }
+    95%{
+        background: url('../img/body-img/destination-20.jpg') center/cover no-repeat;
+    }
+    100%{
+        background: url('../img/body-img/destination-20.jpg') center/cover no-repeat;
+    }
+}
+
+@keyframes color-changing{
+    0%{
+        background: var(--berlin-color);
+    }
+    10%{
+        background: linear-gradient(to left, #ffd205 0%, #ff9b05 100%);
+    }
+    25%{
+        background: var(--hongkong-color);
+    }
+    35%{
+        background: linear-gradient(to left, #f76570 0%, #f78d65 100%);
+    }
+    45%{
+        background: var(--san-color);
+    }
+    55%{
+        background: linear-gradient(to left, #ba71da 0%, #da717b 100%);
+    }
+    65%{
+        background: var(--tuscany-color);
+    }
+    75%{
+        background: linear-gradient(to left, #1bbc9b 0%, #1bbc63 100%);
+    }
+    85%{
+        background: var(--phuket-color);
+    }
+    95%{
+        background: linear-gradient(to left, #14b9d5 0%, #14d5b1 100%);
+    }
+    100%{
+        background: var(--phuket-color);
+    }
+}

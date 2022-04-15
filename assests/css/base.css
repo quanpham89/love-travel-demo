@@ -1,0 +1,139 @@
+:root{
+    --text-color:#9A9A9A;
+    --violet-color: #ba71da;
+    --green-color:#1bbc9b;
+    --yellow-color: #ffd205;
+    --pink-color:#f76570;
+    --blue-color: #14b9d5;
+    --view-btn: linear-gradient(to bottom,#f2726a,#ed564d);
+    --berlin-color: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    --hongkong-color:linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    --san-color: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    --tuscany-color: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+    --ams-color:linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+    --phuket-color:linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+    --header-height: 75px;
+}
+
+
+html{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance:none;
+  }
+  
+
+.flex-display{
+    display: flex;
+}
+
+.invisible{
+    display: none;
+}
+
+.position-relay{
+    position: relative;
+}
+
+/* underline */
+.title-position{
+    text-decoration: none;
+    position: relative;
+    z-index: 1000000;
+}
+
+.underline::after{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    right: 0;
+    bottom: 8px;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: var(--yellow-color);
+
+}
+
+.zero-title.underline::after{
+    background-color: var(--violet-color);
+    bottom: 6px;
+}
+
+.first-tilte-sidebar.underline::after{
+    background-color: var(--yellow-color);
+}
+.second-title-sidebar.underline::after{
+    background-color: #f3a46b;
+}
+
+.third-title.underline::after{
+    background-color: var(--green-color);
+}
+
+.four-title.underline::after{
+    background-color: var(--pink-color);
+    bottom: 12px;
+    height: 6px;
+}
+.fifth-title.underline::after{
+    background-color: var(--blue-color);
+    bottom: 9px;
+}
+.sixth-title.underline::after{
+    background-color: var(--green-color);
+}
+
+.header__menu-sidebar--price{
+    width: 140px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+    text-align: center;
+}
+
+.view-btn{
+    width: 190px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px 20%;
+    transition: 0.25s;
+    background: var(--view-btn);
+    text-align: center;
+}
+
+.number-choice{
+    display: block;
+    color: #fff !important;
+    background: var(--berlin-color);
+    border-radius: 38px;
+    padding: 2px 5px;
+    width: 30px;
+    text-align: center;
+    float: right;
+    font-size: 12px;
+}
